@@ -1,0 +1,1290 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+
+body,
+#root{
+    top:-0.4rem;
+    left:-0.3rem;
+    position: absolute;
+    width:100%;
+    height:100vh;
+    height: max-content;
+    max-height: max-content;
+
+
+}
+.grid-container{
+    grid-template-areas: 
+    "header"
+    "main";
+    grid-template-columns:1fr;
+    grid-template-rows:100px 1fr;
+    
+}
+header{
+    grid-area: header;
+    background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:15px 80px 10px 80px;
+     
+   
+}
+main{
+    
+    grid-area:main;
+    background-color:#fff;
+    display:flex;
+    max-width: 100%;
+    padding:0px 60px 0px 80px;
+    height:100%;
+    min-height:100vh;
+    max-height: max-content;
+    
+}
+.linkStyle{
+    text-decoration: none;
+}
+
+.a-logo{
+    
+    justify-self: center;
+    margin-right: 100px;
+    
+
+}
+.navigation{
+display:flex;
+padding-top:10px;
+justify-self:flex-start;
+
+
+}
+.navigationItem{
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    width:80px;
+    height:50px;
+    
+    text-transform: uppercase;
+    color: #1D1F22;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+
+}
+.navigationItem-selected{
+    color: #5ECE7B;
+    border-bottom:2px solid #5ECE7B;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+
+}
+.actions{
+   justify-self:flex-end;
+align-items: center;
+padding: 0px;
+display:flex;
+padding-right: 0px;
+width:70px;
+justify-content: space-between;
+
+
+}
+.selectCurrency{
+    border:0px;
+    outline:none !important;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+    
+}
+.currency_symbol{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+.currencyContainer{
+    
+     background:transparent;
+    top:48px;
+   right:70px;
+   padding: 10px;
+   position:absolute;
+   z-index:120;
+    
+   display:flex;
+   flex-direction:column;
+    width:100px;
+    height:fit-content;
+    min-height:40px;
+    
+    margin:0;
+    padding:0;
+}
+.currencyBoxSmall{
+    width:fit-content;
+    height:15px;
+    background:transparent;
+   
+    align-self:flex-start;
+    justify-self:flex-start;
+    margin:0px;
+    padding:0px;
+   
+
+}
+.currencyBox{
+    width:fit-content;
+    height:fit-content;
+    background:transparent;
+   
+    display:flex;
+    flex-wrap:wrap;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color:#fff;
+    display:flex;
+    flex-direction: column;
+   
+}
+.currencyDiv{
+    width:100px;
+    height:fit-content;
+    
+    display:flex;
+    justify-content: center;
+    padding:4px;
+    padding-bottom:4px;
+}
+.currencyDiv:last-child{
+    padding-bottom:10px;
+}
+.currencyDiv:first-child{
+    padding-top:10px;
+}
+.currencyDiv:hover{
+    background-color:#eeecec;
+}
+.currencyDivDown{
+    background-color:#020202;
+    color:#fff;
+    width:100px;
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+    padding:4px;
+    padding-bottom:4px;
+}
+.currencyIconSwitch{
+    width:12px;
+    height:12px;
+    position: absolute;
+    top:45px;
+}
+
+.selectCurrency2{
+    width:40px;
+    
+    display:flex;
+    justify-content: center;
+    margin-right:15px;
+}
+
+.currencyOption{
+    border:0px;
+    outline:0px;
+    outline:none !important;
+  
+}
+.currencyOption:focus{
+    border:0px;
+    outline:0px;
+    outline:none !important;
+}
+.shadow {
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    display: inline-block;
+}
+
+/*this is my code not from figma*/
+.minicartBadge{
+    position: absolute;
+    background-color: #1D1F22;
+    border-radius: 60px;
+    text-align:center;
+    width:20px;
+    height:20px;
+    color:white;
+    top:22px;
+    right:62px;
+}
+.minicartBadgeSpan{
+    border:none !important;
+    height:15px;
+    width:15px;
+    text-align:center;
+    font-size:0.9rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.minicartContainer{
+    width:325px;
+   
+    
+    background:transparent;
+    top:32px;
+   right:52px;
+   padding: 10px;
+   position:absolute;
+   z-index:100;
+}
+.minicartBoxSmall{
+    width:325px;
+    height:40px;
+    background:transparent;
+   
+}
+.minicart {
+    width:325px;
+    border:1px solid #f5f2f2;
+    padding: 10px;
+    background-color:#ffffff !important;
+   /*right:52px;
+   padding: 10px;
+   position:absolute;
+   z-index:100;
+   top:62px;*/
+   
+}
+.minicartBox{
+  display:flex;
+  flex-direction:row;
+  max-height:750px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+}
+.minicartHeader{
+     width:325px;
+    font-family: Raleway;
+    font-style: normal;
+     font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    height:26px;
+
+     text-align: left;
+
+    color: #1D1F22;
+}
+.minicartContent{
+     width:325px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+.miniPDislayContainer{
+    display:flex;
+    flex-wrap:wrap;
+    width:325px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:25px;
+}
+.miniPDisplayBoxRow{
+    width:150px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.miniPQuantityBox{
+    width:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height:120px;
+  
+
+}
+.miniQuantityP{
+    
+    border:1px solid #000;
+    background:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    font-weight:800; 
+    width:23px;
+    height:23px;
+    color:#929191;
+    text-align:center;
+}
+.miniQuantityPDown{
+    border:1px solid #000;
+    background-color:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    font-weight:800; 
+    width:23px;
+    height:23px;
+    color:#fffefe;
+    text-align:center;
+}
+.miniQuantityInput{
+    border:none !important;
+    height:24px;
+    width:24px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align:center;
+    font-size:0.9rem;
+}
+.miniPPhotoContainer{
+    max-width: 105px;
+    max-height: 137px;
+    overflow: hidden;
+    height:120px;
+    margin-left:7px;
+    
+}
+.miniPPhotoBox{
+      
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+       
+}
+
+.miniPDisplayBoxCol{
+    width:150px;
+    display:flex;
+    
+    flex-wrap:wrap;
+    min-height:80px;
+    max-height:fit-content;
+   
+    
+   
+}
+.miniPTitle{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 120%;
+width:136px;
+line-break: loose;
+display: flex;
+align-items: center;
+color: #1D1F22;
+justify-self: flex-start;
+align-self:flex-start;
+margin-top:7px;
+}
+.miniPBrand{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 160%;
+width:136px;
+
+display: flex;
+align-items: center;
+color: #1D1F22;
+justify-self: flex-start;
+}
+.miniPPrice{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 160%;
+color: #1D1F22;
+justify-self: center;
+
+}
+.miniPAttributes{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width:150px;
+    align-self:flex-end;
+    justify-self: flex-end;
+    
+}
+.miniPAttributeBox{
+    width:150px;
+   
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:5px;
+    align-items:center;
+    
+    
+}
+.miniAttributeName{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    color: #1D1F22;
+    justify-self: center;
+
+}
+.maxAttributeName{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1D1F22;
+    justify-self: center;
+}
+.maxAtt{
+    margin-bottom:10px;
+}
+.miniAttBox{
+    min-width:15px;
+    max-width:fit-content;
+    height:9px;
+    border:1px solid #A6A6A6;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    margin:0rem 0.2rem 0rem 0.2rem;
+    padding:0.4rem;
+    background-color:rgb(236, 236, 236);
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 160%;
+color: #A6A6A6;
+border-radius:3px;
+    
+  
+}
+.miniAttBox-selected{
+    background-color:#000;
+    color:#ffff;
+}
+.miniAttributeTextBox{
+    display:flex;
+}
+.miniColorBox{
+          height:14px;
+          width:14px;
+          margin:0rem 0.2rem 0rem 0rem;
+          padding:0.2rem;
+          border:1px solid #d3d3d3;
+          opacity: 0.45;
+          border-radius:5px;
+         
+
+}
+.miniColorBox-selected{
+    border:3px solid #e4e1e1;
+    height:14px;
+    width:14px;
+    margin:0rem 0.2rem 0rem 0.2rem;
+    padding:0.2rem;
+    border-radius:5px;
+ }
+ .attributeNameMini {
+    
+    font-style: normal ;
+    font-weight:500;
+    font-size: 12px ;
+    color: #464444 ;
+    background-color: #FFD700;
+    width:fit-content;
+    border: 1px solid #cecccc;
+    padding:5px;
+    margin-bottom:2px;
+    border-radius:7px;
+  
+ }
+ .attributeBottom{
+     justify-self:flex-end;
+ }
+ .totalPrice{
+    width:325px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 800;
+     margin-bottom:5px;
+ }
+.minicartFooter{
+    width:325px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.minicartCheckout{
+    width:140px;
+    height:43px;
+    background-color:#5ECE7B;
+    color:#fff;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:none;
+    text-transform:uppercase;
+}
+.minicartViewBag{
+    width:140px;
+    height:43px;
+    background-color:#fff;
+    color:#000;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:none;
+    text-transform:uppercase;
+    border:1px solid #000;
+}
+
+.showProducts{
+    display:flex;
+    
+    flex-wrap: wrap; 
+    max-width: 100%;   
+    margin-top:30px;
+    justify-content: space-around;
+    margin-top:40px;
+  
+}
+
+
+
+.productCard{
+    width: 386px;
+    height: 400px;
+     display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap:wrap;
+     flex-grow:0;
+    margin:0px 0px 40px 0px;
+    padding-bottom:10px;
+}
+.productCard:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.productCart-unavailable{
+    filter:grayscale(100%);
+    opacity:0.7;
+    mix-blend-mode: multiply;
+}
+.outofstockImg{
+  position:relative;
+  top:-220px;
+ 
+}
+.outOfStockDiv{
+    border:1px solid #d3d3d3;
+    borderRadius:10px;
+    padding:5px;
+    color:#EC7063;
+}
+.productImageContainer{
+    width: 354px;
+    height: 330px;
+   overflow: hidden;
+   justify-self:center;
+   margin-top:10px;
+   mix-blend-mode: multiply;
+   
+}
+.productImage{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.cardTitlePrice{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    width: 354px;
+    height:35px;
+    
+    
+    
+    
+}
+.cardTitle{
+    width: 240px;
+    height: 25px; 
+    font-family:'Raleway';
+    font-style:normal;
+    font-weight:300;
+    font-size:18px;
+    line-height:160%;
+    display:flex;
+    color:#1D1F22;
+    justify-self: flex-start;
+    margin-left:20px;
+    
+    
+}
+.cardPriceBox{
+   display:flex;
+   flex-direction:row;
+   text-align:left;
+   width:354px;
+   height:25px;
+   margin-left:35px;
+   font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+color: #1D1F22;
+
+   
+}
+.productCartIcon{
+    top:-55px;
+    right:-10px;
+    position:relative;
+    
+}
+.productCartIconDiv{
+   justify-self:flex-end;
+}
+.productDetailsPage{
+    padding:5px;
+    flex-grow: 1; 
+    display:flex;
+    max-width: 100%; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
+}
+.productDescription{
+    min-width:292px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 159.96%;
+    
+    
+}
+.displayBigContainer{
+     width:55%;
+    display:flex;
+    flex-direction:column;
+    max-width:55%;
+}
+.displayBigImageContainer{
+    max-width: 610px;
+    max-height: 511px;
+
+    overflow: hidden;
+    mix-blend-mode: multiply;
+
+}
+.displayBigImage{
+  
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.carouselContainer{
+    display:flex; 
+    flex-direction:column;
+    width:10%;
+    max-width:100px;
+    min-width:60px;
+    align-items:center;
+}
+.imageCarouselContainer{
+    width: 100%;
+    
+    overflow: hidden;
+    max-width:80px;
+    max-height:80px;
+    margin-bottom:5px;
+    
+    
+}
+.containerImg {
+    mix-blend-mode: multiply;
+  }
+.displayImageCarousel{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    mix-blend-mode: multiply;
+}
+.productInfo{
+    
+    width:35%;
+    display:flex;
+    flex-direction:column;
+    
+}
+.productInfoContainer{
+    width:292px;
+    
+    display:flex;
+    flex-direction:column;
+}
+.productInfoTitle{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 27px;
+color: #1D1F22;
+margin-bottom:10px;
+
+}
+.attributeName{
+    font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform:uppercase;
+
+color: #1D1F22;
+padding-bottom:5px;
+
+}
+.productInfoAttributeBox{
+    width:292px;
+   
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+    align-items:center;
+    
+    
+}
+.attributeBox{
+    width:63px;
+    height:45px;
+    border:1px solid #1D1F22;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    margin:0.2rem;
+    padding:0.2rem;
+    
+letter-spacing: 0.05em;
+box-sizing:border-box;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+}
+.attributeBox-selected{
+    background-color:#000;
+    color:#ffff;
+}
+.attributeBox-unavailable{
+    border:1px solid #d3d3d3;
+    color:#d3d3d3;
+}
+.colorBox{
+    color:white;
+          height:30px;
+          width:30px;
+          margin:0.2rem;
+          paddin:0.2rem;
+          border:1px solid #d3d3d3;
+          border-radius:5px;
+}
+.colorBox-selected{
+    border:5px solid #e4dada;
+    
+}
+.quantityBox{
+    display:flex;
+    padding-bottom:15px;
+    
+    justify-content: space-between;
+}
+.quantityP{
+    border:none !important;
+    height:35px;
+    width:35px;
+    font-size:1.6rem;
+}
+.quantityInput{
+    border:none !important;
+    height:35px;
+    width:35px;
+    text-align:center;
+    font-size:1.2rem;
+}
+.addToCartButton{
+    width:292px;
+    height:52px;
+    background-color:#5ECE7B;
+    color:#fff;
+    font-family: 'Raleway';
+ font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 120%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:none;
+    text-transform:uppercase;
+}
+.addToCartDown{
+    width:292px;
+    height:52px;
+    background-color:#020202;
+    color:#fff;
+    font-family: 'Raleway';
+    font-weight:600;
+    font-style:normal;
+    font-size:16px;
+    line-height:120%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:none;
+    text-transform:uppercase;
+}
+.addToCartButton-notInStock{
+    background-color:#d3d3d3;
+
+}
+.productInfoPriceBox{
+    width:292px;   
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+}
+.priceLabel{
+    font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+paddingRight:80px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #1D1F22;
+
+}
+.priceContent{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 18px;
+
+display: flex;
+align-items: center;
+
+color: #1D1F22;
+padding-top:8px;
+padding-bottom:10px;
+}
+/*########  Cart big page CSS   ######
+######################################*/
+.cartPage{
+   
+   display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   max-width:100rem !important;
+ 
+   height:max-content;
+   height:100%;
+}
+.cartPageTitle{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+     text-transform: uppercase;
+    
+    color: #1D1F22;
+    width:1000px;
+    margin-bottom:0px;
+   
+
+}
+.cartPageContent{
+   
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   padding-top:20px;
+   width:1000px;
+   height:auto;
+}
+.bigCartContainer{
+    
+    display:flex;
+    flex-wrap:wrap;
+    width:1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:1px solid #E3E3E3;
+  
+}
+.bigCartBoxCol{
+    
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:320px;
+    
+    justify-content: space-between;
+    
+}
+.bigCartBoxRow{
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+   
+    
+}
+.bigCartQuantityBox{
+height: 180px;
+width:35px;
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+
+
+}
+.bigCartPhotoContainer{
+    margin-left:10px;
+    overflow: hidden;
+    height:180px;
+    width:180px;
+    
+    
+}
+.bigCartPhotoDisplay{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    mix-blend-mode: multiply;
+    
+}
+.bigCartPhotoDisplayX{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    background-size:     contain;                      
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    mix-blend-mode: multiply;
+    
+}
+.swapLeft{
+    height:180px;
+    width:90px;
+    font-weight:bolder;
+     
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.8rem;
+    -webkit-text-stroke: 0.02rem #d1d0d0;
+    color:#fff;
+
+    display:flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+     
+   
+}
+.swapLeft:hover{
+    -webkit-text-stroke: 0.02rem #d1d0d0;
+    color:rgb(255, 255, 255);
+    font-size:2.5rem;
+
+}
+
+.swapRight{
+       
+    height:180px;
+    width:90px;
+    font-weight:bolder;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.8rem;
+    -webkit-text-stroke: 0.02rem #d1d0d0;
+    color:#fff;
+
+    display:flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+     
+    
+    
+   
+}
+.swapRight:hover{
+    -webkit-text-stroke: 0.02rem #d1d0d0;
+    color:rgb(255, 255, 255);
+    font-size:2.5rem;
+
+}
+.bigQuantityP{
+    
+    border:1px solid #000;
+    background:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    font-weight:800; 
+    width:35px;
+    height:35px;
+    color:#929191;
+    text-align:center;
+    
+}
+.bigQuantityPDown{
+    border:1px solid #000;
+    background-color:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    font-weight:800; 
+    width:35px;
+    height:35px;
+    color:#ffffff;
+    text-align:center;
+}
+.bigQuantityInput{
+    border:none !important;
+    height:35px;
+    width:35px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align:center;
+    font-size:0.9rem;
+}
+.bigCartPTitle {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 27px;
+display: flex;
+align-items: center;
+color: #1D1F22;
+justify-self: flex-start;
+
+}
+.bigPBrand{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 27px;
+/* identical to box height, or 90% */
+
+display: flex;
+align-items: center;
+
+color: #1D1F22;
+margin-bottom:25px;
+}
+.bigPPrice {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #1D1F22;
+padding:20px 0px 20px 0px;
+justify-self:center;
+}
+.attributeNameBig {
+    
+    font-style: normal ;
+    font-weight:500;
+    font-size: 14px ;
+    color: #464444 ;
+    background-color: #FFD700;
+    width:fit-content;
+    border: 1px solid #cecccc;
+    padding:5px;
+    margin-bottom:2px;
+    border-radius:7px;
+    justify-self:flex-end;
+  
+ }
+ .attributeNameBigUnselected {
+    
+    font-style: normal ;
+    font-weight:500;
+    font-size: 14px ;
+    color: #ffffff ;
+    background-color: #d8d8d8;
+    width:fit-content;
+    border: 1px solid #b6b6b6;
+    padding:5px;
+    margin-bottom:2px;
+    border-radius:7px;
+  
+ }
+ .bigPAttributeBox{
+    width:300px;
+   
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+    align-items:center;
+    
+    
+}
+.totalCartBox{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding-right:25px;
+    font-size:1.4rem;
+    border-top:1px solid #E3E3E3;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+     text-transform: uppercase;
+    
+    color: #1D1F22;
+    width:1000px;
+    margin-bottom:0px;
+    
+}
+.errorClass{
+    color:rgb(252, 99, 99);
+    border:1px  rgb(236, 236, 236);
+    border-radius: 1rem;
+    background-color:rgb(252, 232, 232);
+    width:25rem;
+    height:5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+
+}
+
+.selectWarning{
+    border:1px solid #F02E19;
+    borderRadius:10px;
+     padding:5px;
+    color:#EC7063;
+}
+.emptyCartWarning{
+    color:#7a7a7a;
+}
+.cartEmptySmile{
+    width:80px;
+    height:110px;
+    position:relative;
+    top:50px;
+}
+.errorCategoryFetch{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:50px;
+    width:1000px;
+}
+.productBrand{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 27px;
+/* identical to box height, or 90% */
+
+display: flex;
+align-items: center;
+
+color: #1D1F22;
+}
+.more_products{
+    color:#d3d3d3;
+}
+
