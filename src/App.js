@@ -23,6 +23,7 @@ function  App() {
   const cartQuantity=useSelector((state)=>state.cartR.quantity);
   const cartProducts = useSelector((state)=>state.cartR.cartProducts);
   const currencySymbol=useSelector((state)=>state.dataR.currencySymbol);
+  
  
 
   const [minicart, setMinicart]=useState("hidden");

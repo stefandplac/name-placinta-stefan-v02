@@ -19,24 +19,14 @@ class MiniCart extends Component {
               <>
               {this.props.cartContent.map((product,index)=>(
                   <div key={index}>
-                    {index<3  ? (
+                 
                        <MiniPDisplay  product={product} index={index}/>
-                     ):(<></>
-                     )}
+                  
                   </div>
                   
               ))}
-                <>
-                {this.props.cartContent.length>3 ? (
-                  <div className="more_products">
-                     {`...and  other more items`}
-                  </div>
-                ) : (
-                  <></>
-                )}
                
-                
-               </>
+               
                        
             </>    
           </div>

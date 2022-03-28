@@ -285,10 +285,7 @@ line-height: 160%;
 .minicartBox{
   display:flex;
   flex-direction:row;
-  max-height:750px;
   flex-wrap: wrap;
-  overflow: hidden;
-  
 }
 .minicartHeader{
      width:325px;
@@ -298,18 +295,37 @@ line-height: 160%;
     font-size: 16px;
     line-height: 160%;
     height:26px;
-
-     text-align: left;
-
+    text-align: left;
     color: #1D1F22;
 }
 .minicartContent{
-     width:325px;
+    max-width:325px;
+    width:325px;
+    max-height:510px;
     display:flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y:scroll;
    
 }
+.minicartContent::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .minicartContent::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .minicartContent::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    
+  }
+  
+
+
 .miniPDislayContainer{
     display:flex;
     flex-wrap:wrap;
@@ -549,6 +565,7 @@ border-radius:3px;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 800;
      margin-bottom:5px;
+     padding-top:5px;
  }
 .minicartFooter{
     width:325px;

@@ -7,7 +7,7 @@ export const updateTotalCart=(cartContent)=>(dispatch)=> {
     let symbol=cartContent[0]?.price.currencySymbol;
     let label=cartContent[0]?.price.currencyLabel;
     for(let i=0;i<cartContent.length;i++){
-            amountX +=cartContent[i].price.amount;
+            amountX +=cartContent[i].price.amount*cartContent[i].quantity;
             qty +=cartContent[i].quantity;
           
     };
